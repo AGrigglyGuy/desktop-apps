@@ -1,4 +1,5 @@
 ﻿using System;
+using NCalc;
 using Avalonia;
 
 namespace Calculator
@@ -18,5 +19,8 @@ namespace Calculator
                 .UsePlatformDetect()
                 .WithInterFont()
                 .LogToTrace();
+
+        // Program
+
     }
 }

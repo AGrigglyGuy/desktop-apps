@@ -43,12 +43,12 @@
         
 		<!-- Create a Grid for the buttons-->
     <Grid>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Text="{Binding Greeting}" FontSize="32" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,20" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Text="{Binding Display}" FontSize="32" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,20" TextWrapping="Wrap"/>
 		<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -64,21 +64,21 @@
 
              <!-- Numpad -->
              <!-- First Column -->
-             <Button Grid.Row="3" Grid.Column="0" Content="7" Classes="Numpad"></Button>
-             <Button Grid.Row="4" Grid.Column="0" Content="4" Classes="Numpad"></Button>
-            <Button Grid.Row="5" Grid.Column="0" Content="1" Classes="Numpad"></Button>
+             <Button Grid.Row="3" Grid.Column="0" Content="7" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+             <Button Grid.Row="4" Grid.Column="0" Content="4" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+            <Button Grid.Row="5" Grid.Column="0" Content="1" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
             
             <!-- Second Column -->
-            <Button Grid.Row="3" Grid.Column="1" Content="8" Classes="Numpad"></Button>
-             <Button Grid.Row="4" Grid.Column="1" Content="5" Classes="Numpad"></Button>
-            <Button Grid.Row="5" Grid.Column="1" Content="2" Classes="Numpad"></Button>
-            <Button Grid.Row="6" Grid.Column="1" Content="0" Classes="Numpad"></Button>
-            <Button Grid.Row="6" Grid.Column="2" Content="." Classes="Numpad"></Button>
+            <Button Grid.Row="3" Grid.Column="1" Content="8" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+             <Button Grid.Row="4" Grid.Column="1" Content="5" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+            <Button Grid.Row="5" Grid.Column="1" Content="2" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+            <Button Grid.Row="6" Grid.Column="1" Content="0" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+            <Button Grid.Row="6" Grid.Column="2" Content="." Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
 
             <!-- Third Column -->
-             <Button Grid.Row="3" Grid.Column="2" Content="9" Classes="Numpad"></Button>
-             <Button Grid.Row="4" Grid.Column="2" Content="6" Classes="Numpad"></Button>
-            <Button Grid.Row="5" Grid.Column="2" Content="3" Classes="Numpad"></Button>
+             <Button Grid.Row="3" Grid.Column="2" Content="9" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+             <Button Grid.Row="4" Grid.Column="2" Content="6" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
+            <Button Grid.Row="5" Grid.Column="2" Content="3" Classes="Numpad" Command="{Binding MainButtonsCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"></Button>
 
              <!-- Action Buuttons -->
              <!-- Random Stuff -->
